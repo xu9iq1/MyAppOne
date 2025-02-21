@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#FF00FF00</color>
+
+    <color name="grey">#FFBABABA</color>
+    <color name="ripple_grey">#FF808080</color>
+
+    <color name="red">#FFFF0000</color>
+    <color name="ferrari_red">#FFFF2800</color>
+</resources>
