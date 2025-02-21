@@ -36,9 +36,14 @@ public class MainActivity extends AppCompatActivity {
         // 隐藏状态栏
         // getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
 
-        TextView mTextView = findViewById(R.id.textView);
-        mTextView.setText("FORZA FERRARI\n\n" + mTextView.getText());
+        TextView mHeaderTextView = findViewById(R.id.headerTextView);
+        mHeaderTextView.setText("FORZA FERRARI\n\n" + mHeaderTextView.getText().toString());
 
+        // 显示颜色模式
+        TextView mColorModeTextView = findViewById(R.id.colorModeTextView);
+        mColorModeTextView.setText(mColorModeTextView.getText().toString() + this.getString(R.string.color_mode));
+
+        // 按钮点击交互
         Button mClickToToastButton = findViewById(R.id.clickButton);
         TextView mTimeTextView = findViewById(R.id.timeTextView);
         mClickToToastButton.setOnClickListener(v -> {

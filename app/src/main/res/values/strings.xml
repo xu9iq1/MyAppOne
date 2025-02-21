@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyAppOne</string>
     <string name="header">Welcome To My Application One!\n🤗</string>
-    <string name="click_button">获取当前时间</string>
     <string name="toast">已获取</string>
+    <string name="click_button">获取当前时间</string>
+    <string name="color_mode">亮色模式</string>
+    <string name="color_mode_prefix">当前颜色：</string>
 </resources>
