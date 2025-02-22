@@ -1,5 +1,6 @@
 package com.xu9iq1.myappone;
 
+import android.graphics.drawable.ColorDrawable;
 import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
 import android.widget.Button;
@@ -24,17 +25,18 @@ public class MainActivity extends AppCompatActivity {
         // 适配异形屏
         EdgeToEdge.enable(this);
 
+        // 设置背景颜色以关闭启动页面
+        ColorDrawable windowBackgroundDrawable = new ColorDrawable(getColor(R.color.window_background));
+        this.getWindow().getDecorView().setBackground(windowBackgroundDrawable);
+
         setContentView(R.layout.activity_main);
 
-        // 确保视图内容不会被系统栏遮挡
+        // 确保视图内容不会被系统栏遮挡，TOP为0防止下拉通知栏时页面发生抖动
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        // 隐藏状态栏
-        // getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
 
         TextView mHeaderTextView = findViewById(R.id.headerTextView);
         mHeaderTextView.setText("FORZA FERRARI\n\n" + mHeaderTextView.getText().toString());

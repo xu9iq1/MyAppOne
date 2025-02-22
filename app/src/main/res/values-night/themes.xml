@@ -3,7 +3,8 @@
     <style name="Base.Theme.MyAppOne" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">#FF000000</item>
-        <!-- 启动界面 -->
-        <item name="android:windowBackground">#FF000000</item>
+
+        <item name="android:windowBackground">@drawable/ferrari_window_background_night</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

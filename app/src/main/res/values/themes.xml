@@ -3,8 +3,9 @@
     <style name="Base.Theme.MyAppOne" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">#FFFFFFFF</item>
-        <!-- 启动界面 -->
-        <item name="android:windowBackground">#FFFFFFFF</item>
+
+        <item name="android:windowBackground">@drawable/ferrari_window_background</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="Theme.MyAppOne" parent="Base.Theme.MyAppOne" />
